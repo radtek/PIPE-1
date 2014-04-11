@@ -1,0 +1,341 @@
+/*=(===============================================================)*/
+
+/*=(===============================================================)*/
+/*=(Created with RoboEditor.)=======================================*/
+/*=(===============================================================)*/
+
+
+/*begin-old-version{{*/
+
+ /* $MVD$:color("18","e8ffff","LtTellow","1") */
+ /* $MVD$:color("19","e8e8e8","LtSilver","1") */
+ /* $MVD$:fontset("Verdana","Verdana") */
+ BODY { font-family : "Verdana";
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        font-size : 10.0pt;
+        background-color : #FFFFE8;
+        background-image : none;
+        list-style-type : disc;
+        list-style-position : outside;
+        color : black;
+        word-spacing : normal;
+        letter-spacing : normal;}
+ .mvd-BODY { font-family : "Verdana";
+             font-style : normal;
+             font-variant : normal;
+             font-weight : normal;
+             font-size : 10.0pt;
+             background-color : #FFFFE8;
+             background-image : none;
+             list-style-type : disc;
+             list-style-position : outside;
+             color : black;
+             word-spacing : normal;
+             letter-spacing : normal;}
+ H1 { font-size : 24.0pt;}
+ .mvd-H1 { font-size : 24.0pt;}
+ H2 { font-weight : bold;
+      font-size : 18.0pt;}
+ .mvd-H2 { font-weight : bold;
+           font-size : 18.0pt;}
+ H3 { font-weight : bold;
+      font-size : 14.0pt;}
+ .mvd-H3 { font-weight : bold;
+           font-size : 14.0pt;}
+ H4 { font-weight : bold;
+      font-size : 12.0pt;}
+ .mvd-H4 { font-weight : bold;
+           font-size : 12.0pt;}
+ H5 { font-size : 12.0pt;}
+ .mvd-H5 { font-size : 12.0pt;}
+ H6 { font-size : 12.0pt;}
+ .mvd-H6 { font-size : 12.0pt;}
+ P { font-family : "Verdana";
+     font-style : normal;
+     font-variant : normal;
+     font-weight : normal;
+     font-size : 10.0pt;
+     background-color : transparent;
+     background-image : none;
+     list-style-type : disc;
+     list-style-position : outside;
+     color : black;
+     border : none black 1.0pt;
+     margin-left : 12.0pt;}
+ .mvd-P { font-family : "Verdana";
+          font-style : normal;
+          font-variant : normal;
+          font-weight : normal;
+          font-size : 10.0pt;
+          background-color : transparent;
+          background-image : none;
+          list-style-type : disc;
+          list-style-position : outside;
+          color : black;
+          margin-left : 12.0pt;}
+ CITE.expandspot { font-style : normal;
+                   color : green;
+                   cursor: hand;}
+ .mvd-CITE-expandspot { font-style : normal;
+                        color : green;
+                        cursor: hand;}
+ DFN.collapsed { font-style : italic;
+                 font-weight : normal;
+                 display :        'none';
+                 color : red;}
+ .mvd-DFN-collapsed { font-style : italic;
+                      font-weight : normal;
+                      display :        'none';
+                      color : red;}
+ DFN.expanded { font-style : italic;
+                font-weight : normal;
+                color : red;}
+ .mvd-DFN-expanded { font-style : italic;
+                     font-weight : normal;
+                     color : red;}
+ EM.dropspot { color : green;
+               cursor: hand;}
+ .mvd-EM-dropspot { color : green;
+                    cursor: hand;}
+ CITE.glossterm { font-style : normal;
+                  color : maroon;
+                  cursor: hand;}
+ .mvd-CITE-glossterm { font-style : normal;
+                       color : maroon;
+                       cursor: hand;}
+ DFN.glosscollapsed { font-style : italic;
+                      font-weight : normal;
+                      display :        'none';
+                      color : blue;}
+ .mvd-DFN-glosscollapsed { font-style : italic;
+                           font-weight : normal;
+                           display :        'none';
+                           color : blue;}
+ DFN.glossexpanded { font-style : italic;
+                     font-weight : normal;
+                     color : blue;}
+ .mvd-DFN-glossexpanded { font-style : italic;
+                          font-weight : normal;
+                          color : blue;}
+ PRE { font-family : "Verdana";
+       font-size : 9.0pt;
+       background-color : transparent;
+       color : black;
+       border : black;
+       word-spacing : normal;
+       letter-spacing : normal;}
+ .mvd-PRE { font-family : "Verdana";
+            font-size : 9.0pt;
+            background-color : transparent;
+            color : black;
+            word-spacing : normal;
+            letter-spacing : normal;}
+ 
+/*}}end-old-version*/
+BODY {
+	font-family: Verdana;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	background-color: #ffffe8;
+	background-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+	color: #000000;
+	word-spacing: normal;
+	letter-spacing: normal;
+}
+
+H1 {
+	font-size: 24.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H1 {
+	font-size: 24.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H2 {
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H2 {
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H3 {
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H3 {
+	font-weight: bold;
+	font-size: 14.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H4 {
+	font-weight: bold;
+	font-size: 12.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H5 {
+	font-size: 12.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H5 {
+	font-size: 12.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+H6 {
+	font-size: 12.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-H6 {
+	font-size: 12.0pt;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+P {
+	font-family: Verdana;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	background-color: transparent;
+	background-image: none;
+	list-style-type: disc;
+	list-style-position: outside;
+	color: #000000;
+	border: none #000000 1.0pt;
+	margin-left: 12.0pt;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P {
+	font-family: Verdana;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-size: 10.0pt;
+	list-style-type: disc;
+	list-style-position: outside;
+	color: #000000;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+A.expandspot {
+	cursor: hand;
+	color: #008000;
+	font-style: normal;
+}
+
+SPAN.expandtext {
+	color: #ff0000;
+	font-weight: normal;
+	font-style: italic;
+}
+
+A.dropspot {
+	font-style: italic;
+	cursor: hand;
+	color: #008000;
+}
+
+A.glossterm {
+	cursor: hand;
+	color: #800000;
+	font-style: normal;
+}
+
+SPAN.glosstext {
+	color: #0000ff;
+	font-weight: normal;
+	font-style: italic;
+}
+
+P.Preformatted {
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	margin-bottom: 14pt;
+	margin-top: 14pt;
+	x-text-tab-stops: repeat 1in;
+	white-space: nowrap;
+	letter-spacing: normal;
+	word-spacing: normal;
+	border: #000000;
+	color: #000000;
+	background-color: transparent;
+	font-size: 9.0pt;
+	font-family: Verdana;
+}
+
+/*=(Generated Code)=================================================*/
+/*=(WARNING: DO NOT EDIT OR DELETE THIS SECTION!)===================*/
+/*begin!kadov{{=====================================================*/ 
+LI.kadov-P-CPreformatted {
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	x-text-tab-stops: repeat 1in;
+	white-space: nowrap;
+	letter-spacing: normal;
+	word-spacing: normal;
+	color: #000000;
+	font-size: 9.0pt;
+	font-family: Verdana;
+}
+/*}}end!kadov=======================================================*/ 
+
+
+
+
+/*=(===============================================================)*/

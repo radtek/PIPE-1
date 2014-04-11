@@ -1,0 +1,127 @@
+
+ /* $MVD$:color("18","e8ffff","LtTellow","1") */
+ /* $MVD$:color("19","e8e8e8","LtSilver","1") */
+ /* $MVD$:fontset("Verdana","Verdana") */
+ BODY { font-family : "Verdana";
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        font-size : 10.0pt;
+        background-color : #FFFFE8;
+        background-image : none;
+        list-style-type : disc;
+        list-style-position : outside;
+        color : black;
+        word-spacing : normal;
+        letter-spacing : normal;}
+ .mvd-BODY { font-family : "Verdana";
+             font-style : normal;
+             font-variant : normal;
+             font-weight : normal;
+             font-size : 10.0pt;
+             background-color : #FFFFE8;
+             background-image : none;
+             list-style-type : disc;
+             list-style-position : outside;
+             color : black;
+             word-spacing : normal;
+             letter-spacing : normal;}
+ H1 { font-size : 24.0pt;}
+ .mvd-H1 { font-size : 24.0pt;}
+ H2 { font-weight : bold;
+      font-size : 18.0pt;}
+ .mvd-H2 { font-weight : bold;
+           font-size : 18.0pt;}
+ H3 { font-weight : bold;
+      font-size : 14.0pt;}
+ .mvd-H3 { font-weight : bold;
+           font-size : 14.0pt;}
+ H4 { font-weight : bold;
+      font-size : 12.0pt;}
+ .mvd-H4 { font-weight : bold;
+           font-size : 12.0pt;}
+ H5 { font-size : 12.0pt;}
+ .mvd-H5 { font-size : 12.0pt;}
+ H6 { font-size : 12.0pt;}
+ .mvd-H6 { font-size : 12.0pt;}
+ P { font-family : "Verdana";
+     font-style : normal;
+     font-variant : normal;
+     font-weight : normal;
+     font-size : 10.0pt;
+     background-color : transparent;
+     background-image : none;
+     list-style-type : disc;
+     list-style-position : outside;
+     color : black;
+     border : none black 1.0pt;
+     margin-left : 12.0pt;}
+ .mvd-P { font-family : "Verdana";
+          font-style : normal;
+          font-variant : normal;
+          font-weight : normal;
+          font-size : 10.0pt;
+          background-color : transparent;
+          background-image : none;
+          list-style-type : disc;
+          list-style-position : outside;
+          color : black;
+          margin-left : 12.0pt;}
+ CITE.expandspot { font-style : normal;
+                   color : green;
+                   cursor: hand;}
+ .mvd-CITE-expandspot { font-style : normal;
+                        color : green;
+                        cursor: hand;}
+ DFN.collapsed { font-style : italic;
+                 font-weight : normal;
+                 display :        'none';
+                 color : red;}
+ .mvd-DFN-collapsed { font-style : italic;
+                      font-weight : normal;
+                      display :        'none';
+                      color : red;}
+ DFN.expanded { font-style : italic;
+                font-weight : normal;
+                color : red;}
+ .mvd-DFN-expanded { font-style : italic;
+                     font-weight : normal;
+                     color : red;}
+ EM.dropspot { color : green;
+               cursor: hand;}
+ .mvd-EM-dropspot { color : green;
+                    cursor: hand;}
+ CITE.glossterm { font-style : normal;
+                  color : maroon;
+                  cursor: hand;}
+ .mvd-CITE-glossterm { font-style : normal;
+                       color : maroon;
+                       cursor: hand;}
+ DFN.glosscollapsed { font-style : italic;
+                      font-weight : normal;
+                      display :        'none';
+                      color : blue;}
+ .mvd-DFN-glosscollapsed { font-style : italic;
+                           font-weight : normal;
+                           display :        'none';
+                           color : blue;}
+ DFN.glossexpanded { font-style : italic;
+                     font-weight : normal;
+                     color : blue;}
+ .mvd-DFN-glossexpanded { font-style : italic;
+                          font-weight : normal;
+                          color : blue;}
+ PRE { font-family : "Verdana";
+       font-size : 9.0pt;
+       background-color : transparent;
+       color : black;
+       border : black;
+       word-spacing : normal;
+       letter-spacing : normal;}
+ .mvd-PRE { font-family : "Verdana";
+            font-size : 9.0pt;
+            background-color : transparent;
+            color : black;
+            word-spacing : normal;
+            letter-spacing : normal;}
+ 

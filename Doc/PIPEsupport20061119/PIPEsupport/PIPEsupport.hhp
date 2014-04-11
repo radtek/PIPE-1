@@ -1,0 +1,51 @@
+[OPTIONS]
+Compiled File=PIPEsupport.chm
+Title=PanCIM_Oracle_Interface
+Contents File=PIPEsupport.hhc
+Index File=PIPEsupport.hhk
+Default topic=Head.htm
+Default Window=MainWindow
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=Yes
+Binary Index=No
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+
+[WINDOWS]
+MainWindow="PanCIM-Oracle Interface","PIPEsupport.hhc","PIPEsupport.hhk","","",,,,,0x120,220,0x200e,[10,10,910,610],0x0,0x0,,0,0,0
+
+[FILES]
+Oracle.htm
+MSSQLdb.htm
+FieldDefs.htm
+SchedAct.htm
+DivisionCodes.htm
+PanCIMMsg.htm
+OracleJobManager.htm
+Overview.htm
+DataSetNames.htm
+LogFiles.htm
+MSSQLTables.htm
+TroubleShooting.htm
+InfoPlus21.htm
+Head.htm
+OracleMap.htm
+OracleDB.htm
+ProgramStartup.htm
+BSSCDHTM.js
+eHelp.xml
+ehlpdhtm.js
+
+PIPEsupport.brs
+[ALIAS]
+#include PIPEsupport.ali
+
+[MAP]
+
+[TEXT POPUPS]
+
+

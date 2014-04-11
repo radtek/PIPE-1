@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<!DOCTYPE polprojfile>
+<ppfml version="1.00" project="PIPEsupport">
+ <windowlist>
+ </windowlist>
+ <contextmap>
+ </contextmap>
+ <topiclist defaulttopic="Head.htm">
+  <topic>Oracle.htm
+  </topic>
+  <topic>MSSQLdb.htm
+  </topic>
+  <topic>FieldDefs.htm
+  </topic>
+  <topic>SchedAct.htm
+  </topic>
+  <topic>DivisionCodes.htm
+  </topic>
+  <topic>PanCIMMsg.htm
+  </topic>
+  <topic>OracleJobManager.htm
+  </topic>
+  <topic>Overview.htm
+  </topic>
+  <topic>DataSetNames.htm
+  </topic>
+  <topic>LogFiles.htm
+  </topic>
+  <topic>MSSQLTables.htm
+  </topic>
+  <topic>TroubleShooting.htm
+  </topic>
+  <topic>InfoPlus21.htm
+  </topic>
+  <topic>Head.htm
+  </topic>
+  <topic>OracleMap.htm
+  </topic>
+  <topic>OracleDB.htm
+  </topic>
+  <topic>ProgramStartup.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+ </filenamemap>
+</ppfml>

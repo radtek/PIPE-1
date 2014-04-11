@@ -1,0 +1,52 @@
+ PanCIm - Oracle Interface
+ ----------------------------
+   written: March 08, 2006
+   author : Bill Cosmen
+ ----------------------------
+
+ DATE        VER   Build  BY     DESCRIPTION                             
+ ----------  ----  -----  ----  -----------------------------------------------------------------
+ 07/24/2006   1.0    100   WRC   Stable test version
+ 08/03/2006   1.0    101   WRC   Replaced MACHINE_ID with MACHINE_NAME field data.
+                                 Fixed MDS Issue update query.
+                                                                   
+ 08/11/2006   1.0    103   WRC   Added re-activation class
+ 08/21/2006   1.0    105   WRC   Source code cleanup for production version.
+ 09/27/2006   1.1    000   WRC   Added IP21 workorder history updates when Oracle WIP status is
+                                 COMPLETE. 
+ 10/24/06     1.1    007   WRC   Added material cost
+                                 Changed updates to JobPerformance table
+ 11/03/06     1.2    000   WRC   Added workorder record cleanup function. Deletes all workorder
+                                 records if status is REMOVE and date done < 60 days from current.
+ 11/13/06     2.0    000   WRC   Added command line argument for record decode filtering
+ 11/20/06     2.0    001   WRC   Set new field ModFlag true in JobHistory for IP21 MS Access updates
+ 01/02/07     2.0    002   WRC   Modified ModifyWorkorderRecord method to just reset Oracle flag and
+                                 update the job history table if the IP21 workorder record does not 
+                                 exist. Changed number of IP21 workorder record retention days to 90.   
+ 01/30/07     2.0    003   WRC   Modified ModifyOracleJobRecord method to just reset Oracle flag and
+                                 update the job history table if the IP21 workorder record does not
+                                 exist.
+ 05/07/07     2.1    002   WRC   Removed Oracle oShutdown() calls to eliminate problem of Setcim AtTime.dll
+                                 being unloaded from memeory. Next call requiring AtTime.dll would crash 
+                                 program.
+ 05/10/07     2.1    003   WRC   Added Oracle cancel activation to OracleJobDef records
+ 05/24/07     2.1    004   WRC   Corrected problem of not creating OracleJobDef records properly.
+ 05/29/07     2.1    005   WRC   Added Oracle library open error check.                                
+ 06/07/07     2.1    007   WRC   Replaced local timestamp with the Oracle Sysdate function for MDS transactions
+                                 to eliminate differences in Oracle server timestamps. Suggested by EZW
+ 06/13/07     2.1    008   WRC   Added Burr Ridge organization ID. Expanded maximum number of departments to 20.
+ 06/21/07     2.2    000   WRC   Added classes to convert Oracle timestamps into local timezone timestamps.
+ 07/06/07     2.2    003   WRC   Production version using timestamp conversions.                                  
+ 09/04/07     2.2    004   WRC   Changed job record update for MACHINE_NAME from long to character string. 
+ 11/27/07     2.2    005   WRC   Removed time adjustment when DST flag is set. Flag does not indicate DST is actually
+                                 in effect as I thought it did. It only indicates that the system time should be automatically
+                                 adjusted when DST is in effect.
+ 05/19/08     2.2    006   WRC   Added error trap for no free IP21 record IDs in CreateOracleJobRecord routine.                                
+ 05/28/08     2.2    007   WRC   Modified CreateWorkorderRecord method and calling routine to improve error
+                                 checking and reporting. No longer resets Oracle flags for NEW workorder if any
+                                 errors are detected.
+ 06/02/08     2.2    008   WRC   Added MACHINE_NAME <> OFFLINE filter in Oracle query to minimize processing these records.
+ 06/19/08     2.2    009   WRC   Added adjustment for local DST time to match Oracle CST timestamps.
+ 05/28/09     2.2    009a  WRC   Changed WIP DSNs to use Oracle 11.1 ODBC connection
+ 06/05/09     3.0    000   WRC   Compiled with Visual Studio 2008 C++ compiler
+  

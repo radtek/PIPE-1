@@ -1,0 +1,306 @@
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","e8ffff","LtTellow","1") -->
+  <!-- $MVD$:color("19","e8e8e8","LtSilver","1") -->
+  <!-- $MVD$:fontset("Verdana","Verdana") -->
+  <TITLE>PanCIMMsg</TITLE>
+  <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
+  <SCRIPT LANGUAGE="javascript" TITLE="BSSC Special Effects" SRC="BSSCDHTM.js">
+ </SCRIPT><LINK
+  REL="StyleSheet" HREF="default.css"></HEAD>
+  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
+  <H5>
+   <SPAN STYLE="text-decoration :underline;">PanCIM Message Record</SPAN></H5>
+  <P>
+   Several PanCIM applications use the <SPAN STYLE="font-weight : bold;">P</SPAN>roduction
+    <SPAN STYLE="font-weight : bold;">I</SPAN>nformation <SPAN STYLE="font-weight : bold;">P</SPAN>anCIM
+    <SPAN STYLE="font-weight : bold;">E</SPAN>xporter program to update 
+   various relational databases and tables through records created under 
+   the <SPAN STYLE="font-weight : bold;">PanCIMMessageDef</SPAN> 
+   deifinition record. The PIPE program processes these messages based 
+   on the code in the <SPAN STYLE="font-weight : bold;">TransCode</SPAN> 
+   field. After the data has been successfully transfered, the message 
+   record is deleted.</P>
+  <P>
+   The following table lists the TransCodes and actions.</P>
+  <P>
+   <TABLE WIDTH="630" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="125" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Generating Program</FONT></SPAN></TD>
+     <TD WIDTH="120" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">TransCode</FONT></SPAN></TD>
+     <TD WIDTH="70" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Value</FONT></SPAN></TD>
+     <TD WIDTH="310" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Action</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_WORK</P>
+      <P>
+       <!-- $MVD$:spaceretainer() -->&nbsp;</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       WO Done</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       1</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       The PanCIM workorder program transfers some of the collected 
+       production information such as measured quantity, cycle count and run 
+       time to Oracle and other databases when the order is done (<SPAN STYLE="font-style : italic;">WC
+        and PSPL only</SPAN>)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_WORK</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Job Done</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       2</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       (<SPAN STYLE="font-style : italic;">same as </SPAN>WO Done <SPAN STYLE="font-style : italic;">code</SPAN>)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       SE local SQL</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Job Done</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       2</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Transfers some of the collected job data to Oracle and other database 
+       tables collected from the SE system.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_WORK</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Job Perf</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       8</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Transfers some of the collected job performance data to various 
+       tables in the MSSQL ProductionHist database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_MDS_</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MDS Issue</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       4</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       The <SPAN STYLE="font-weight : bold;">M</SPAN>aterial <SPAN STYLE="font-weight : bold;">D</SPAN>elivery
+        <SPAN STYLE="font-weight : bold;">S</SPAN>ystem program 
+       automatically creates these records to update Oracle with data from 
+       each material issue transaction. (<SPAN STYLE="font-style : italic;">WC
+        only</SPAN>)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_MDS_</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MDS Inven</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       5</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       The <SPAN STYLE="font-weight : bold;">M</SPAN>aterial <SPAN STYLE="font-weight : bold;">D</SPAN>elivery
+        <SPAN STYLE="font-weight : bold;">S</SPAN>ystem automatically 
+       creates these records to update Oracle with data for each sub-inventory
+        transfer. <SPAN STYLE="font-style : italic;">(WC only</SPAN>)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_EVNT</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Bgr Perf</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       9</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates various tables in the MSSQL EquipmentPerf database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_EVNT</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Ins Perf</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       10</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates various tables in the MSSQL EquipmentPerf database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_EVNT</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Ldr Perf</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       11</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates various tables in the MSSQL EquipmentPerf database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_TRAK</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Mold Repair</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       13</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates various tables in the MSSQL EquipmentRepair database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_TRAK</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Bgr Repair</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       14</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates various tables in the MSSQL EquipmentRepair database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       TSK_STAR</TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Sys Comment</TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       16</TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Updates user entered comments in the SystemComments table in the 
+       EquipmentPerf database</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="125" BGCOLOR="#E8E8E8" VALIGN=TOP></TD>
+     <TD WIDTH="120" BGCOLOR="#E8E8E8" VALIGN=TOP></TD>
+     <TD WIDTH="70" BGCOLOR="#E8E8E8" VALIGN=TOP></TD>
+     <TD WIDTH="310" BGCOLOR="#E8E8E8" VALIGN=TOP></TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   There are two special case records defined by <SPAN STYLE="font-weight : bold;">PanCIMMessageDef</SPAN> 
+   that should always be present. When these records are activated, 
+   TSK_PIPE performs various maintenance functions. (<SPAN STYLE="font-style : italic;">see
+    <A HREF="SchedAct.htm">Scheduled Activations</A></SPAN>)</P>
+  <P>
+   <TABLE WIDTH="630" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="156" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Record</FONT></SPAN></TD>
+     <TD WIDTH="124" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">TransCode</FONT></SPAN></TD>
+     <TD WIDTH="84" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Value</FONT></SPAN></TD>
+     <TD WIDTH="266" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Action</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="156" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       PanCIMMsgCheck</TD>
+     <TD WIDTH="124" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       ReActivate</TD>
+     <TD WIDTH="84" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       17</TD>
+     <TD WIDTH="266" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Re-activates any records defined by PanCIMMessageDef for processing 
+       in the event they did not initially due to some type of problem with 
+       the Oracle database connection. The activation schedule is contained 
+       in the <SPAN STYLE="font-weight : bold;">ActPanCIMMsg</SPAN> record. <SPAN STYLE="font-style : italic;">(see
+        <A HREF="SchedAct.htm">Scheduled Activations</A></SPAN>)</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="156" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       ActWOCleanup</TD>
+     <TD WIDTH="124" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       WO Cleanup</TD>
+     <TD WIDTH="84" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       18</TD>
+     <TD WIDTH="266" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       When activated, TSK_PIPE will search for and delete any record 
+       defined by WorkorderDef that meets the current rules. The current 
+       criteria for deletion is that the WOStatus field must contain the 
+       REMOVE code and the DateDone field timestamp must be greater than 60 
+       days from the current date. The activation schedule is contained in 
+       the <SPAN STYLE="font-weight : bold;">ActWoCleanup</SPAN> record. <SPAN STYLE="font-style : italic;">(see
+        <A HREF="SchedAct.htm">Scheduled Activations</A></SPAN>)</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   The values for the <SPAN STYLE="font-weight : bold;">TransCodes</SPAN> 
+   are contained in the <SPAN STYLE="font-weight : bold;">PanCIMMsgTypes</SPAN> record.</P>
+  <P>
+   <IMG SRC="IMG0000.jpg" WIDTH="538" HEIGHT="358" VSPACE="0" HSPACE="0" BORDER="0"></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;
+ </BODY>
+</HTML>

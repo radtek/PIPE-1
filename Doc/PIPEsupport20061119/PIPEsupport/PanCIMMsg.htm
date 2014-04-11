@@ -1,0 +1,924 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<!--(==============================================================)-->
+<!--(Document created with RoboEditor. )============================-->
+<!--(==============================================================)-->
+
+<head>
+
+<title>PanCIMMsg</title>
+
+<!--(Meta)==========================================================-->
+
+<meta http-equiv=content-type content="text/html; charset=windows-1252">
+<meta name=generator content="RoboHELP by eHelp Corporation - www.ehelp.com">
+<meta name=generator-major-version content=0.1>
+<meta name=generator-minor-version content=1>
+<meta name=filetype content=kadov>
+<meta name=filetype-version content=1>
+<meta name=page-count content=1>
+<meta name=layout-height content=1900>
+<meta name=layout-width content=660>
+<meta name=x-ignored-words content="PanCIM;OracleJobManager;OracleMap;MSSQL;OracleJobDef;PanCIMSE;WC;PSPL;OracleJob;Oracle_Field;APPS.PANDUIT_WIP_PANCIM_JOB_V;Occurrence_Num;Data_Type;Field_Label;OCCURRENCE_NUM;TSK_PIPE;Cosmen;TSP_PIPE;PIPE.LOG;workorder;ODBC;DB_NAME;DB_USER;DB_PWD;MSSQLTables;ProductionHist;EqptHist;JobHist;JobPerf;MfgSystemInfo;EquipmentPerf;BaggerPerf;InserterPerf;LoaderPerf;MoldMachPerf;EquipmentRepair;BaggerRepairAction;BaggerRepairHist;BaggerRepairItem;MoldRepairAction;MoldRepairHist;MoldRepairItem;PIPE.LOG.;SETCIMLOGS;DSNs;DSN;PANCIM_WIP_V;PANCIM_WIP;MDS_Issue;MDS;MDS_Inven;ProdSched;ProdJobHist;EqptPerfHist;EqptRepHist;LOGS_IN_MEMORY;OrganizationCode;OrganizationID;Scheduled_Time;Reschedule_Interval;Current_Status;Activation_Type;Records_Added;Records_Modified;Records_Removed;Log_Time;Added_Count;Modified_Count;Removed_Count;Department_ID;PanCIMMessageDef;TransCode;TransCodes;TSK_WORK;WO;Perf;TSK_MDS_;Inven;TSK_EVNT;Bgr;Ldr;TSK_TRAK;TSK_STAR;Sys;SystemComments;PanCIMMsgCheck;ReActivate;ActPanCIMMsg;ActWOCleanup;WorkorderDef;WOStatus;DateDone;timestamp;ActWoCleanup;PanCIMMsgTypes">
+
+
+<!--(Links)=========================================================-->
+
+<link REL=StyleSheet HREF=default.css>
+
+
+
+</head>
+
+<!--(Body)==========================================================-->
+
+
+<body>
+
+<h5><span style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ ">PanCIM 
+ Message Record</span></h5>
+
+<p>Several PanCIM applications use the <span style="font-weight: bold;">P</span>roduction 
+ <span style="font-weight: bold;">I</span>nformation <span style="font-weight: bold;">P</span>anCIM 
+ <span style="font-weight: bold;">E</span>xporter program to update various 
+ relational databases and tables through records created under the <span 
+ style="font-weight: bold;">PanCIMMessageDef</span> definition record. 
+ The PIPE program processes these messages based on the code in the <span 
+ style="font-weight: bold;">TransCode</span> field. After the data has 
+ been successfully transferred, the message record is deleted.</p>
+
+<p>The following table lists the TransCodes and actions.</p>
+
+<!--(Table)=========================================================-->
+<table x-use-null-cells
+		wrapperparagraphselector=P
+		style="width: 630px;
+				border-spacing: 2px;
+				margin-top: 14pt;"
+		cellspacing=2
+		width=630>
+
+<tr>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=125px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Generating Program</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=120px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>TransCode</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=70px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Value</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=310px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Action</font></span></td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p>TSK_WORK</p>
+<p style="margin-bottom: 0;">&nbsp;</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">WO Done</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">1</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">The PanCIM workorder program transfers some 
+ of the collected production information such as measured quantity, cycle 
+ count and run time to Oracle and other databases when the order is done 
+ (<span style="font-style: italic;">WC and PSPL only</span>)</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_WORK</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Job Done</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">2</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">(<span style="font-style: italic;">same as 
+ </span>WO Done <span style="font-style: italic;">code</span>)</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">SE local SQL</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Job Done</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">2</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Transfers some of the collected job data to 
+ Oracle and other database tables collected from the SE system.</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_WORK</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Job Perf</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">8</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Transfers some of the collected job performance 
+ data to various tables in the MSSQL ProductionHist database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_MDS_</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">MDS Issue</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">4</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">The <span style="font-weight: bold;">M</span>aterial 
+ <span style="font-weight: bold;">D</span>elivery <span style="font-weight: bold;">S</span>ystem 
+ program automatically creates these records to update Oracle with data 
+ from each material issue transaction. (<span style="font-style: italic;">WC 
+ only</span>)</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_MDS_</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">MDS Inven</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">5</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">The <span style="font-weight: bold;">M</span>aterial 
+ <span style="font-weight: bold;">D</span>elivery <span style="font-weight: bold;">S</span>ystem 
+ automatically creates these records to update Oracle with data for each 
+ sub-inventory transfer. <span style="font-style: italic;">(WC only</span>)</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_EVNT</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Bgr Perf</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">9</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates various tables in the MSSQL EquipmentPerf 
+ database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_EVNT</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Ins Perf</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">10</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates various tables in the MSSQL EquipmentPerf 
+ database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_EVNT</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Ldr Perf</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">11</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates various tables in the MSSQL EquipmentPerf 
+ database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_TRAK</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Mold Repair</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">13</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates various tables in the MSSQL EquipmentRepair 
+ database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_TRAK</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Bgr Repair</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">14</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates various tables in the MSSQL EquipmentRepair 
+ database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p style="margin-bottom: 0;">TSK_STAR</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p style="margin-bottom: 0;">Sys Comment</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p style="margin-bottom: 0;">16</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p style="margin-bottom: 0;">Updates user entered comments in the SystemComments 
+ table in the EquipmentPerf database</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 125px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=125px>
+<p>&nbsp;</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 120px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=120px>
+<p>&nbsp;</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 70px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=70px>
+<p>&nbsp;</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 310px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=310px>
+<p>&nbsp;</td></tr>
+</table>
+
+<p>There are two special case records defined by <span style="font-weight: bold;">PanCIMMessageDef</span> 
+ that should always be present. When these records are activated, TSK_PIPE 
+ performs various maintenance functions. (<span style="font-style: italic;">see 
+ <a HREF="SchedAct.htm">Scheduled Activations</a></span>)</p>
+
+<!--(Table)=========================================================-->
+<table x-use-null-cells
+		wrapperparagraphselector=P
+		style="width: 630px;
+				border-spacing: 2px;
+				margin-top: 14pt;"
+		cellspacing=2
+		width=630>
+
+<tr>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 156px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=156px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Record</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 124px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=124px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>TransCode</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 84px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=84px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Value</font></span></td>
+<td style="background-color: #000000;
+			x-cell-content-align: TOP;
+			width: 266px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#000000
+	width=266px>
+<p style="margin-bottom: 0;"><span style="font-weight: bold;"><font style="color: #ffffff;"
+	color=#FFFFFF>Action</font></span></td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 156px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=156px>
+<p style="margin-bottom: 0;">PanCIMMsgCheck</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 124px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=124px>
+<p style="margin-bottom: 0;">ReActivate</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 84px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=84px>
+<p style="margin-bottom: 0;">17</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 266px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=266px>
+<p style="margin-bottom: 0;">Re-activates any records defined by PanCIMMessageDef 
+ for processing in the event they did not initially due to some type of 
+ problem with the Oracle database connection. The activation schedule is 
+ contained in the <span style="font-weight: bold;">ActPanCIMMsg</span> 
+ record. <span style="font-style: italic;">(see <a HREF="SchedAct.htm">Scheduled 
+ Activations</a></span>)</td></tr>
+
+<tr>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 156px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=156px>
+<p style="margin-bottom: 0;">ActWOCleanup</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 124px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=124px>
+<p style="margin-bottom: 0;">WO Cleanup</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 84px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=84px>
+<p style="margin-bottom: 0;">18</td>
+<td style="background-color: #E8E8E8;
+			x-cell-content-align: TOP;
+			width: 266px;
+			padding-left: 2px;
+			padding-top: 2px;
+			padding-right: 2px;
+			padding-bottom: 2px;"
+	valign=top
+	bgcolor=#E8E8E8
+	width=266px>
+<p style="margin-bottom: 0;">When activated, TSK_PIPE will search for and 
+ delete any record defined by WorkorderDef that meets the current rules. 
+ The current criteria for deletion is that the WOStatus field must contain 
+ the REMOVE code and the DateDone field timestamp must be greater than 
+ 60 days from the current date. The activation schedule is contained in 
+ the <span style="font-weight: bold;">ActWoCleanup</span> record. <span 
+ style="font-style: italic;">(see <a HREF="SchedAct.htm">Scheduled Activations</a></span>)</td></tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p>The values for the <span style="font-weight: bold;">TransCodes</span> 
+ are contained in the <span style="font-weight: bold;">PanCIMMsgTypes</span> 
+ record.</p>
+
+<p><img src="IMG0000.jpg"
+		style="width: 538px;
+				height: 358px;
+				border-style: none;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				margin-right: 0px;"
+		width=538
+		height=358
+		border=0></p>
+
+<p>&nbsp;</p>
+
+<p style="margin-bottom: 0;">&nbsp; </p>
+
+</body>
+
+</html>

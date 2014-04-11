@@ -1,0 +1,221 @@
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","e8ffff","LtTellow","1") -->
+  <!-- $MVD$:color("19","e8e8e8","LtSilver","1") -->
+  <!-- $MVD$:fontset("Verdana","Verdana") -->
+  <TITLE>OracleJobManager</TITLE>
+  <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
+  <SCRIPT LANGUAGE="javascript" TITLE="BSSC Special Effects" SRC="BSSCDHTM.js">
+ </SCRIPT><LINK
+  REL="StyleSheet" HREF="default.css"></HEAD>
+  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
+  <H5>
+   <SPAN STYLE="text-decoration :underline;">OracleJobManager Record</SPAN></H5>
+  <P>
+   The <SPAN STYLE="font-weight : bold;">OracleJobManager</SPAN> record 
+   in the PanCIM database is responsible for activating the interface 
+   program to read the Oracle job packet table and make any necessary 
+   updates to either database. The frequency of the activations can be 
+   adjusted by changing the reschedule interval field value. The 
+   specific organization ID and department codes read by and processed 
+   by the PIPE program are determined by entries in this record.</P>
+  <P>
+   <IMG SRC="IMG0005.jpg" WIDTH="573" HEIGHT="397" VSPACE="0" HSPACE="0" BORDER="0"></P>
+  <P>
+   <TABLE WIDTH="580" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="164" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Field Name</FONT></SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="BLACK" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Description</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">LOGS_IN_MEMORY</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Number of logged status occurrences</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">#_DEPARTMENTS</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Number of departments to include in 
+       Oracle job record retrieval</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">DB_NAME</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle database instance</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">DB_USER</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle database user name</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">DB_PWD</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle database password</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">OrganizationCode</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle code for division (</SPAN><SPAN STYLE="font-style : italic;font-size : 9.0pt;">see
+        <A HREF="DivisionCodes.htm">Division Codes</A></SPAN><SPAN STYLE="font-size : 9.0pt;">)</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">OrganizationID</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle ID for division (</SPAN><SPAN STYLE="font-style : italic;font-size : 9.0pt;">see
+        <A HREF="DivisionCodes.htm">Division Codes</A></SPAN><SPAN STYLE="font-size : 9.0pt;">)</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Scheduled_Time</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Indicates next record activation time</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Reschedule_Interval</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Interval between record activations</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Current_Status</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">TSK_PIPE will update this field with 
+       last status (</SPAN><SPAN STYLE="font-style : italic;font-size : 9.0pt;">see
+        Job Manager Status codes</SPAN><SPAN STYLE="font-size : 9.0pt;">)</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Activation_Type</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Not currently used</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Records_Added</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Number of records added to PanCIM 
+       database during last activation</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Records_Modified</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Number of records modified during 
+       last activation</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Records_Removed</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Number of records removed from the 
+       PanCIM database during last activation</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Log_Time</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Time of log entry</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Added_Count</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Logged value for number of records added</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Modified_Count</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Logged value for number of records modified</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Removed_Count</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Logged value for number of records removed</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Status</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Logged status code</SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="164" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Department_ID</SPAN></TD>
+     <TD WIDTH="416" BGCOLOR="#E8E8E8" VALIGN=CENTER>
+      <P>
+       <SPAN STYLE="font-size : 9.0pt;">Oracle department ID to include in 
+       the record retrieval</SPAN></TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   <SPAN STYLE="font-weight : bold;"><FONT COLOR="RED">IMPORTANT</FONT></SPAN>:
+    TSK_PIPE only reads information from this record when initially 
+   starting. If changes to this record are made while TSK_PIPE is 
+   running, it needs to be stopped and restarted in order to refresh 
+   it's data.</P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;
+ </BODY>
+</HTML>

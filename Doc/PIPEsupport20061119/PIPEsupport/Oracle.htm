@@ -1,0 +1,86 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<!--(==============================================================)-->
+<!--(Document created with RoboEditor. )============================-->
+<!--(==============================================================)-->
+
+<head>
+
+<title>Oracle</title>
+
+<!--(Meta)==========================================================-->
+
+<meta http-equiv=content-type content="text/html; charset=windows-1252">
+<meta name=generator content="RoboHELP by eHelp Corporation - www.ehelp.com">
+<meta name=generator-major-version content=0.1>
+<meta name=generator-minor-version content=1>
+<meta name=filetype content=kadov>
+<meta name=filetype-version content=1>
+<meta name=page-count content=1>
+<meta name=layout-height content=517>
+<meta name=layout-width content=775>
+<meta name=x-ignored-words content="PanCIM;OracleJobManager;OracleMap;MSSQL;OracleJobDef;PanCIMSE;WC;PSPL;OracleJob;Oracle_Field;APPS.PANDUIT_WIP_PANCIM_JOB_V;Occurrence_Num;Data_Type;Field_Label;OCCURRENCE_NUM;TSK_PIPE;Cosmen;TSP_PIPE;PIPE.LOG;workorder;ODBC;DB_NAME;DB_USER;DB_PWD;MSSQLTables;ProductionHist;EqptHist;JobHist;JobPerf;MfgSystemInfo;EquipmentPerf;BaggerPerf;InserterPerf;LoaderPerf;MoldMachPerf;EquipmentRepair;BaggerRepairAction;BaggerRepairHist;BaggerRepairItem;MoldRepairAction;MoldRepairHist;MoldRepairItem;PIPE.LOG.;SETCIMLOGS;DSNs;DSN;PANCIM_WIP_V;PANCIM_WIP;MDS_Issue;MDS;MDS_Inven;ProdSched;ProdJobHist;EqptPerfHist;EqptRepHist;LOGS_IN_MEMORY;OrganizationCode;OrganizationID;Scheduled_Time;Reschedule_Interval;Current_Status;Activation_Type;Records_Added;Records_Modified;Records_Removed;Log_Time;Added_Count;Modified_Count;Removed_Count;Department_ID;PanCIMMessageDef;TransCode;TransCodes;TSK_WORK;WO;Perf;TSK_MDS_;Inven;TSK_EVNT;Bgr;Ldr;TSK_TRAK;TSK_STAR;Sys;SystemComments;PanCIMMsgCheck;ReActivate;ActPanCIMMsg;ActWOCleanup;WorkorderDef;WOStatus;DateDone;timestamp;ActWoCleanup;PanCIMMsgTypes;DivisionCodes;CR;SGP;Orland;NL;Lenox;Lockport;ScheduledActDef;WOCleanup;login;JobHistInterface;Panduit;OracleJogManager;INTERFACE_STATUS;Y;N;WIP_ENTITY_ID;APPS.PANDUIT_WIP_PANCIM_JOB">
+
+
+<!--(Links)=========================================================-->
+
+<link REL="StyleSheet" HREF="default.css">
+
+
+
+</head>
+
+<!--(Body)==========================================================-->
+
+
+<body>
+
+<h5><span style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ ">Oracle 
+ Tables</span></h5>
+
+<p>The <span style="font-weight: bold;">P</span>roduction <span style="font-weight: bold;">I</span>nformation 
+ <span style="font-weight: bold;">P</span>anCIM <span style="font-weight: bold;">E</span>xporter 
+ program reads data from several fields in the <span style="font-weight: bold;">APPS.PANDUIT_WIP_PANCIM_JOB_V</span> 
+ table in the Oracle database. This table contains the job information 
+ packet for all Panduit divisions but only records that satisfy the information 
+ contained in the <a HREF="OracleJobManager.htm">OracleJogManager</a> record 
+ are retrieved on each activation.</p>
+
+<p>The <span style="font-weight: bold;">PIPE</span> program processes the 
+ Oracle job data based on the contents of the six flag fields and/or the 
+ INTERFACE_STATUS code found in each record retrieved. When new jobs are 
+ created, Oracle creates a new record in this table with the job data, 
+ sets the INTERFACE_STATUS field to &quot;<span style="font-weight: bold;">NEW</span>&quot; 
+ and sets all six flag fields to &quot;<span style="font-weight: bold;">Y</span>&quot;. 
+ After TSK_PIPE successfully processes the record, it returns &quot;<span 
+ style="font-weight: bold;">OK</span>&quot; to the INTERFACE_STATUS field 
+ and sets all six flags to &quot;<span style="font-weight: bold;">N</span>&quot;.</p>
+
+<p>When data in any of the six flagged fields is changed, Oracle sets the 
+ associated flag field &quot;<span style="font-weight: bold;">Y</span>&quot;. 
+ TSK_PIPE reads and processes any record in this table that meets the filtering 
+ established in the <a HREF="OracleJobManager.htm">OracleJobManager</a> 
+ record and has at least one of the flag fields in this table set to &quot;<span 
+ style="font-weight: bold;">Y</span>&quot;. After successfully updating 
+ the necessary PanCIM and/or MSSQL tables, it resets the associated Oracle 
+ flag field back to &quot;<span style="font-weight: bold;">N</span>&quot;.</p>
+
+<p><span style="font-weight: bold;">Note:</span> <span style="font-style: italic;">Since 
+ the APPS.PANDUIT_WIP_PANCIM_JOB_V table is actually a view, TSK_PIPE does 
+ not write to this table directly. It uses the WIP_ENTITY_ID stored in 
+ the InfoPlus.21 workorder or job record to locate and update the correct 
+ row in the APPS.PANDUIT_WIP_PANCIM_JOB table.</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p style="margin-bottom: 0;">&nbsp; </p>
+
+</body>
+
+</html>

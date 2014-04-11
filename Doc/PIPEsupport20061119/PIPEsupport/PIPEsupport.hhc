@@ -1,0 +1,89 @@
+<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="WindowName" value="MainWindow">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+  <param name="Window Styles" value="0x800402">
+  <param name="ExWindow Styles" value="0x100">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="PanCIM - Oracle Interface Support">
+    <param name="Local" value="Head.htm">
+    <param name="WindowName" value="MainWindow">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Overview">
+      <param name="Local" value="Overview.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="InfoPlus.21">
+      <param name="Local" value="InfoPlus21.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Program Startup">
+        <param name="Local" value="ProgramStartup.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="OracleJobManager Record">
+        <param name="Local" value="OracleJobManager.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="OracleMap Record">
+        <param name="Local" value="OracleMap.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="PanCIM Message Records">
+        <param name="Local" value="PanCIMMsg.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Scheduled Activations">
+        <param name="Local" value="SchedAct.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Division Codes">
+        <param name="Local" value="DivisionCodes.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="MSSQL Database">
+      <param name="Local" value="MSSQLdb.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="MSSQL Tables">
+        <param name="Local" value="MSSQLTables.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Field Definitions">
+        <param name="Local" value="FieldDefs.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Oracle Database">
+      <param name="Local" value="OracleDB.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Oracle Tables">
+        <param name="Local" value="Oracle.htm">
+      </object>
+      </ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Data Set Names">
+      <param name="Local" value="DataSetNames.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Log Files">
+      <param name="Local" value="LogFiles.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Troubleshooting Tips">
+      <param name="Local" value="TroubleShooting.htm">
+    </object>
+    </ul>
+</ul>
+</html>

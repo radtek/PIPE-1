@@ -1,0 +1,188 @@
+<HTML>
+ <HEAD>
+  <!-- $MVD$:app("RoboHELP HTML Edition by Blue Sky Software, portions by MicroVision Dev. Inc.","769") -->
+  <!-- $MVD$:template("","0","0") -->
+  <!-- $MVD$:color("18","e8ffff","LtTellow","1") -->
+  <!-- $MVD$:color("19","e8e8e8","LtSilver","1") -->
+  <!-- $MVD$:fontset("Verdana","Verdana") -->
+  <TITLE>MSSQLTables</TITLE>
+  <META NAME="generator" CONTENT="RoboHELP by Blue Sky Software www.blue-sky.com HTML Edition">
+  <SCRIPT LANGUAGE="javascript" TITLE="BSSC Special Effects" SRC="BSSCDHTM.js">
+ </SCRIPT><LINK
+  REL="StyleSheet" HREF="default.css"></HEAD>
+  <BODY ONLOAD="BSSCOnLoad();" ONCLICK="BSSCOnClick();" ONUNLOAD="BSSCOnUnload();">
+  <H5>
+   <SPAN STYLE="text-decoration :underline;">MSSQLTables</SPAN></H5>
+  <P>
+   There are currently four tables in the MSSQL <SPAN STYLE="font-weight : bold;">ProductionHist</SPAN> 
+   database required for the <SPAN STYLE="font-weight : bold;">P</SPAN>roduction
+    <SPAN STYLE="font-weight : bold;">I</SPAN>nformation <SPAN STYLE="font-weight : bold;">P</SPAN>anCIM
+    <SPAN STYLE="font-weight : bold;">E</SPAN>xport program.</P>
+  <P>
+   Database:<SPAN STYLE="font-weight : bold;font-size : 11.0pt;">ProductionHist</SPAN></P>
+  <P>
+   <TABLE WIDTH="480" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="140" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Table</FONT></SPAN></TD>
+     <TD WIDTH="340" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Description</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       EqptHist</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains production history information related to auxilary equipment</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       JobHist</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains job history information from Oracle as well as some PanCIM 
+       collected data.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       JobPerf</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains some performance information collected by PanCIM related to 
+       the Oracle job.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MfgSystemInfo</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains some static information related to molds when joined to 
+       other tables. Used for various reporting functions.</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   Database:<SPAN STYLE="font-weight : bold;font-size : 11.0pt;">EquipmentPerf</SPAN></P>
+  <P>
+   <TABLE WIDTH="480" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="140" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Table</FONT></SPAN></TD>
+     <TD WIDTH="340" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Description</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       BaggerPerf</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains bagger performance data (bagger cycles, fault counts, etc) 
+       associated with the Oracle job. </TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       InserterPerf</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains inserter performance data (inserter cycles, fault counts, 
+       etc) associated with the Oracle job. </TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       LoaderPerf</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains loader performance data (loader cycles, fault counts, etc) 
+       associated with the Oracle job. </TD>
+    </TR>
+    <TR>
+     <TD WIDTH="140" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MoldMachPerf</TD>
+     <TD WIDTH="340" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       (<SPAN STYLE="font-style : italic;">not currently used</SPAN>)</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   <!-- $MVD$:spaceretainer() -->&nbsp;</P>
+  <P>
+   Database:<SPAN STYLE="font-weight : bold;font-size : 11.0pt;">EquipmentRepair</SPAN></P>
+  <P>
+   <TABLE WIDTH="480" CELLPADDING="2" CELLSPACING="2" BORDER="0">
+    <TR>
+     <TD WIDTH="160" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Table</FONT></SPAN></TD>
+     <TD WIDTH="320" BGCOLOR="BLACK" VALIGN=TOP>
+      <P>
+       <SPAN STYLE="font-weight : bold;"><FONT COLOR="WHITE">Description</FONT></SPAN></TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       BaggerRepairAction</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains the repair action text associated with the InfoPlus.21 
+       integer codes.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       BaggerRepairHist</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains bagger repair information collected by PanCIM.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       BaggerRepairItem</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains the repair item text associated with the InfoPlus.21 integer codes.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MoldRepairAction</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains the repair action text associated with the InfoPlus.21 
+       integer codes.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MoldRepairHist</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains mold repair information collected by PanCIM.</TD>
+    </TR>
+    <TR>
+     <TD WIDTH="160" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       MoldRepairItem</TD>
+     <TD WIDTH="320" BGCOLOR="#E8E8E8" VALIGN=TOP>
+      <P>
+       Contains the repair item text associated with the InfoPlus.21 integer codes.</TD>
+    </TR>
+   </TABLE></P>
+  <P>
+   See the <A HREF="FieldDefs.htm">Field Definitions</A> topic for data 
+   definitions of the fields in these tables.
+ </BODY>
+</HTML>
